@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.0/materia/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <navbar class="navbar navbar-expand-md">
+        <a href="index.html" class="navbar-brand">Dashboard</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="navbar-link dropdown">
+                <img src="./assests/images/download.png" data-toggle="dropdown" data-target="#profilemenu" alt=""
+                    class="profilepic">
+                <div class="dropdown-menu dropdown-menu-right" id="profilemenu">
+                    <a href="#" class="dropdown-item">Your Profile</a>
+                    <a href="#" class="dropdown-item">My Balance</a>
+                    <a href="#" class="dropdown-item">Your Courses</a>
+                    <a href="#" class="dropdown-item">Notification</a>
+                    <a href="#" class="dropdown-item">Change Password</a>
+                    <a href="#" class="dropdown-item">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </navbar>
+
+    <!-- Side Menu-->
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 p-0">
+                <div class="sidemenu">
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item "><a href="" class="nav-link active"><i class="fa fa-tachometer"
+                                    aria-hidden="true"></i>Dahsboard</a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-user" aria-hidden="true"></i>
+                                Profile</a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-table"
+                                    aria-hidden="true"></i>Table</a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-superpowers"
+                                    aria-hidden="true"></i>Icons</a></li>
+                        <li class="nav-item"><a href="" class="nav-link"> <i class="fa fa-file"
+                                    aria-hidden="true"></i>Blank</a></li>
+                        <li class="nav-item"><a href="" class="nav-link"> <i class="fa fa-exclamation-triangle"
+                                    aria-hidden="true"></i>404</a></li>
+                    </ul>
+                    <button class="btn btn-danger btn-block" type="button">Upgrade to Pro</button>
+                </div>
+            </div>
+
+
+            <div class="col-lg-9 ">
+                <div class="maindashboard">
+                    <p class="dahsboard">Dashboard</p>
+                    <nav aria-label="Page breadcrumb ">
+                        <ol class="breadcrumb ">
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            <li class="breadcrumb-item">Dashboard</li>
+                        </ol>
+                    </nav>
+
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h3 class="card-title">Sales Summary</h3>
+                                    <h5 class="text-muted">Overview of Latest Month</h5>
+                                    <img src="./assests/images/graph.jpg" alt="" class="img-fluid graph">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-5">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h3 class="card-title">Feeds</h3>
+                                    <div class="tasks">
+                                        <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i>You have 4
+                                            pending tasks</a>
+                                        <span class="time text-muted">Just Now</span>
+                                    </div>
+                                    <div class="tasks">
+                                        <a href="#"><i class="fa fa-database" aria-hidden="true"></i>Server #1
+                                            overloaded</a>
+                                        <span class="time text-muted">2 Hours ago</span>
+                                    </div>
+                                    <div class="tasks">
+                                        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>New order
+                                            recieved</a>
+                                        <span class="time text-muted">31 May</span>
+                                    </div>
+                                    <div class="tasks">
+                                        <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>New user
+                                            registered</a>
+                                        <span class="time text-muted">Yesterday</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tablemenu">
+                    <div class="row">
+                        <div class="card  shadow" id="table">
+                            <div class="card-body">
+                                <h4 class="card-title">Top Selling Products</h4>
+                                <h5 class="text-muted">Overview of Top Selling Items</h5>
+
+                                <select name="" id="" class="form-control">
+                                    <option selected>Yearly</option>
+                                    <option value="Month">Month</option>
+                                    <option value="Weekly">Weekly</option>
+
+                                </select>
+                                <table class="table">
+                                    <thead class="mt-">
+                                        <tr>
+                                            <th>Products</th>
+                                            <th>License</th>
+                                            <th>Support Agent</th>
+                                            <th>Technology</th>
+                                            <th>Tickets</th>
+                                            <th>Sales</th>
+                                            <th>Earnings</th>
+
+                                        </tr>
+                                    </thead>
+
+                                    <tr>
+                                        <td>
+                                            Elite Admint
+                                        </td>
+                                        <td>
+                                            Single Use
+                                        </td>
+                                        <td>
+                                            John Doe
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-danger p-2">Angular</span>
+                                        </td>
+                                        <td>
+                                            46
+                                        </td>
+                                        <td>
+                                            356
+                                        </td>
+                                        <td>
+                                            $2850.06
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Elite Admint
+                                        </td>
+                                        <td>
+                                            Single Use
+                                        </td>
+                                        <td>
+                                            John Doe
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-primary p-2">React-Js</span>
+                                        </td>
+                                        <td>
+                                            46
+                                        </td>
+                                        <td>
+                                            356
+                                        </td>
+                                        <td>
+                                            $2850.06
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Elite Admint
+                                        </td>
+                                        <td>
+                                            Single Use
+                                        </td>
+                                        <td>
+                                            John Doe
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-secondary p-2">Javascript</span>
+                                        </td>
+                                        <td>
+                                            46
+                                        </td>
+                                        <td>
+                                            356
+                                        </td>
+                                        <td>
+                                            $2850.06
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Elite Admint
+                                        </td>
+                                        <td>
+                                            Single Use
+                                        </td>
+                                        <td>
+                                            John Doe
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-info p-2">PHP</span>
+                                        </td>
+                                        <td>
+                                            46
+                                        </td>
+                                        <td>
+                                            356
+                                        </td>
+                                        <td>
+                                            $2850.06
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Elite Admint
+                                        </td>
+                                        <td>
+                                            Single Use
+                                        </td>
+                                        <td>
+                                            John Doe
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-light p-2">NodeJs</span>
+                                        </td>
+                                        <td>
+                                            46
+                                        </td>
+                                        <td>
+                                            356
+                                        </td>
+                                        <td>
+                                            $2850.06
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Elite Admint
+                                        </td>
+                                        <td>
+                                            Single Use
+                                        </td>
+                                        <td>
+                                            John Doe
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-primary p-2">MERN</span>
+                                        </td>
+                                        <td>
+                                            46
+                                        </td>
+                                        <td>
+                                            356
+                                        </td>
+                                        <td>
+                                            $2850.06
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Elite Admint
+                                        </td>
+                                        <td>
+                                            Single Use
+                                        </td>
+                                        <td>
+                                            John Doe
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-danger p-2">Angular</span>
+                                        </td>
+                                        <td>
+                                            46
+                                        </td>
+                                        <td>
+                                            356
+                                        </td>
+                                        <td>
+                                            $2850.06
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Elite Admint
+                                        </td>
+                                        <td>
+                                            Single Use
+                                        </td>
+                                        <td>
+                                            John Doe
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-success p-2">HTML</span>
+                                        </td>
+                                        <td>
+                                            46
+                                        </td>
+                                        <td>
+                                            356
+                                        </td>
+                                        <td>
+                                            $2850.06
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container mt-4"></div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="recentcomments">
+                            <div class="card  shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">Recent Comments</h5>
+                                    <div class="profiles">
+                                        <div class="box">
+                                            <img src="./assests/images/girl1.jpg" alt="" class="profile">
+                                        </div>
+                                        <div class="profileinfo">
+                                            <h5 class="name">James Anderson</h5>
+                                            <p>Lorem Inpsum is simply dummy text of the printing and type
+                                                setting industry.</p>
+                                            <span class="badge badge-primary p-2">Pending</span>
+                                            <span class="time text-muted">14 April 2019</span>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="profiles selected">
+                                        <div class="box">
+                                            <img src="./assests/images/girl2.jpg" alt="" class="profile">
+                                        </div>
+                                        <div class="profileinfo">
+                                            <h5 class="name">Michael Jorden</h5>
+                                            <p>Lorem Inpsum is simply dummy text of the printing and type
+                                                setting industry.</p>
+                                            <span class="badge badge-success p-2">Approved</span>
+                                            <span class="time text-muted">6 Months ago</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="profiles">
+                                        <div class="box">
+                                            <img src="./assests/images/girl1.jpg" alt="" class="profile">
+                                        </div>
+                                        <div class="profileinfo">
+                                            <h5 class="name">Miss Hasina</h5>
+                                            <p>Lorem Inpsum is simply dummy text of the printing and type
+                                                setting industry.</p>
+                                            <span class="badge badge-danger p-2">Rejected</span>
+                                            <span class="time text-muted">1 minute ago</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="weatherInfo">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">Temp Guide</h5>
+                                    <i class="fas fa-cloud-sun"></i>
+                                    <span class="temp">73 deg </span>
+                                    <span class="day">Saturday
+                                        <br> <span class="location">Ahmedabad,India</span>
+                                    </span>
+
+                                    <br>
+                                    <div class="tempdetail mt-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Wind</th>
+                                                    <th>Humidity</th>
+                                                    <th>Pressure</th>
+                                                    <th>Cloud Cover</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tr>
+                                                <td>ESE 17 mph</td>
+                                                <td>83%</td>
+                                                <td>28.56 in</td>
+                                                <td>78%</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="more">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                                            <p>09:30</p>
+                                            <h5>70deg</h5>
+
+                                        </div>
+                                        <div class="col-3">
+                                            <i class="fa fa-cloud" aria-hidden="true"></i>
+                                            <p>02:30</p>
+                                            <h5>60deg</h5>
+
+                                        </div>
+                                        <div class="col-3">
+                                            <i class="fa fa-tint" aria-hidden="true"></i>
+                                            <p>04:15</p>
+                                            <h5>30deg</h5>
+
+                                        </div>
+                                        <div class="col-3">
+                                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                                            <p>10:50</p>
+                                            <h5>40deg</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- End Side Menu-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
